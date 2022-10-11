@@ -8,8 +8,8 @@ using namespace std;
 
 int main() {
 
-	//newimage1();
+	newimage1();
 	//newimage2();
 	//newimage3();
-	aula10_10();
+	//aula10_10();
 }

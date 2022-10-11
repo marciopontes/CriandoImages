@@ -23,7 +23,7 @@ inline int newimage1() {
 		image << "0 0 255" << endl;				//blue
 		image << "255 255 0" << endl;			//yellow
 		image << "255 255 255" << endl;			//white
-		image << "0 255 0" << endl;				//black
+		image << "0 0 0" << endl;				//black
 
 
 	}
