@@ -68,7 +68,7 @@ inline int aula10_10() {
 		// Convert Strings into Ints
 
 		//stringstream redstream(red);
-	
+
 		int intRED = stoi(red);
 		int intGreen = stoi(green);
 		int intBlue = stoi(blue);
@@ -78,28 +78,29 @@ inline int aula10_10() {
 		if (intRED + 30 > 255) {
 			intRED = 255;
 		}
-		else {
+		else
+		{
 			intRED += 30;
-
 		}
-		// Filter - Green
+		// Filter - blue 
 
-		if (intGreen - 30 > 255) {
-				intGreen = 255;
-			}
-			else {
-				intGreen -= 30;
+		if (intBlue + 50 > 255) {
+			intBlue = 255;
+		}
+		else
+		{
+			intBlue += 50;
+		}
+		// Filter - Green 
 
-			}
-			// Filter - Blue
+		if (intGreen - 30 < 0) {
+			intGreen = 0;
+		}
+		else
+		{
+			intGreen -= 30;
+		}
 
-			if (intBlue + 50 > 255) {
-				intBlue = 0;
-			}
-			else {
-				intBlue += 50;
-
-			}
 		// New Images
 				//newimage << red << " " << green << " " << blue << " ";
 		newimage << intRED << " " << intGreen << " " << intBlue << " ";
